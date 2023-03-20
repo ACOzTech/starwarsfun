@@ -1,0 +1,19 @@
+.cardDiv {
+  display: inline-block;
+  /* border-style: solid; */
+  border-color: rgb(195, 67, 241);
+  border-radius: 10px;
+  padding: 0em 1em;
+  margin: 1em;
+  text-align: left;
+  font-size: medium;
+  font-weight: 480;
+  background-color: rgb(138, 247, 245);
+  color: rgb(124, 44, 144);
+}
+
+.cardName {
+  padding: 0em 1em;
+  text-align: center;
+  color: rgb(122, 18, 148);  
+}

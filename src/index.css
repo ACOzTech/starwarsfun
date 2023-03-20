@@ -5,9 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to right, rgb(26, 80, 137), rgb(212, 0, 255));
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-weight: 500px;
+  color: rgb(43, 226, 119);
+}
+
+h2 {
+  font-size: 200%;
+}
+
+.fancyTitle {
+  text-align: center;
+  font-size: 500%;
+  transform: skew(-10deg);
+  letter-spacing: 4px;
+  text-shadow: 
+    -1px -1px 0 rgb(20, 73, 20),
+    -2px -2px 0 rgb(20, 73, 20),
+    -3px -3px 0 rgb(20, 73, 20),
+    -4px -4px 0 rgb(20, 73, 20),
+    -5px -5px 0 rgb(20, 73, 20),
+    -6px -6px 0 rgb(20, 73, 20),
+    -7px -7px 0 rgb(20, 73, 20),
+    -8px -8px 0 rgb(140, 226, 140),
+    -30px -20px 40px rgb(140, 226, 140);
 }
