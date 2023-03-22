@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,28 +14,32 @@ code {
     monospace;
 }
 
-h1 {
-  font-weight: 500px;
+.swf-bright-green {
   color: rgb(43, 226, 119);
+
+}.swf-bg-blue-green {
+  background-color: rgb(138, 247, 245);
 }
 
-h2 {
-  font-size: 200%;
+.swf-skew10dneg {
+ transform: skew(-10deg);
 }
 
-.fancyTitle {
-  text-align: center;
-  font-size: 500%;
-  transform: skew(-10deg);
-  letter-spacing: 4px;
+.swf-txtshadow {
   text-shadow: 
-    -1px -1px 0 rgb(20, 73, 20),
-    -2px -2px 0 rgb(20, 73, 20),
-    -3px -3px 0 rgb(20, 73, 20),
-    -4px -4px 0 rgb(20, 73, 20),
-    -5px -5px 0 rgb(20, 73, 20),
-    -6px -6px 0 rgb(20, 73, 20),
-    -7px -7px 0 rgb(20, 73, 20),
-    -8px -8px 0 rgb(140, 226, 140),
-    -30px -20px 40px rgb(140, 226, 140);
+  -1px -1px 0 rgb(42, 37, 52),
+  -2px -2px 0 rgb(42, 37, 52),
+  -3px -3px 0 rgb(42, 37, 52),
+  -4px -4px 0 rgb(42, 37, 52),
+  -5px -5px 0 rgb(42, 37, 52),
+  -6px -6px 0 rgb(42, 37, 52),
+  -7px -7px 0 rgb(42, 37, 52),
+  -8px -8px 0 rgb(42, 37, 52),
+  -30px -20px 40px rgb(42, 37, 52);
+}
+
+.swf-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }

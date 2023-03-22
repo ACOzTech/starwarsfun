@@ -1,12 +1,18 @@
-import { Component, Fragment } from 'react';
-import CardList from './CardList';
+import { Component} from 'react';
+import CardList from '../components/CardList';
+import SearchBox from '../components/SearchBox';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      people: [],     
+      people: [],
+      searchfield: '',     
     }
+  }
+
+  onSearchChange = (event) => {
+    this.setState({searchfield: event.target.value});
   }
 
   componentDidMount() {
@@ -33,13 +39,20 @@ class App extends Component {
   };
 
   render() {
+    const {searchfield, people} = this.state;
+    const filteredPeople = people.filter(person => {
+      return person.name.toLowerCase().includes(searchfield.toLowerCase());
+    });
     return !this.state.people.length ?
-      <h1>Loading...</h1> :
+      <h2>Loading...</h2> :
       (
-        <Fragment>
-          <h1 className='fancyTitle'>STAR WARS FUN!</h1>
-          <CardList people={this.state.people}/>
-        </Fragment>
+        <div className='tc'>
+          <div className='swf-sticky bg-purple'>
+            <h1 className='f2 f1-m f-5-l tracked swf-txtshadow swf-skew10dneg swf-bright-green'>STAR WARS FUN!</h1>
+            <SearchBox searchChange={this.onSearchChange} />
+          </div>
+          <CardList people={filteredPeople}/>
+        </div>
       );
   }
 }

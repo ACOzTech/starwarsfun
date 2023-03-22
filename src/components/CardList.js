@@ -6,12 +6,12 @@ const CardList = ({people}) => {
       <div>
         {
           people.map(person => {
-                return (
-                  <Card
-                    key={person.name}
-                    person={person}
-                  />
-                )
+            return (
+              <Card
+                key={person.name}
+                person={person}
+              />
+            )
           })
         }
       </div>
